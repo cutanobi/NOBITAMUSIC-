@@ -17,7 +17,7 @@ async def wish(_, m):
     text = m.text.split(None, 1)[1]
     wish_count = random.randint(1, 100)
     wish = f"✨ ʜᴇʏ! {m.from_user.first_name}! "
-    wish += f"✨ ʏᴏᴜʀ ᴡɪꜱʜ: {text} "
+    wish += f"✨  ʏᴏᴜʀ ᴡɪꜱʜ: {text} "
     wish += f"✨ ᴘᴏꜱꜱɪʙʟᴇ ᴛᴏ: {wish_count}%"
     
     await app.send_animation(
